@@ -20,6 +20,17 @@ The flask app runs on the local port 5000 (http://127.0.0.1:5000). Requests can 
 `POST http://127.0.0.1:5000/users`
 `JSON payload = {'name':'...','email':'...','password':'...'}`
 
+`GET http://127.0.0.1:5000/users/<id_of_user>`
+
+`GET http://127.0.0.1:5000/users/    #get all users`
+
+`Delete http://127.0.0.1:5000/users/<id_of_user>`
+
+`PUT http://127.0.0.1:5000/users/<id_of_user>`
+`JSON payload = {'name':'...', ...}`
+
+
+
 # Functionalities
 
 1 - Basic rate limiting.
