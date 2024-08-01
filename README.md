@@ -10,12 +10,12 @@ Foremost, create a .env file in your root directory and add your MongoDB Atlas c
 MONGO_URI = "mongodb+srv://<username>:<password>@co-rider.2n4ihqd.mongodb.net/<your_database_name>?retryWrites=true&w=majority&appName=Co-rider"
 ```
 
-All the required modules are given in 'requirements.txt'. Since this project is meant to use docker, Dockerfile and .yml files have been created. To run the project, enter the command in the root directory through bash or some other terminal.
+All the required modules are given in 'requirements.txt'. Since this project is meant to use docker, Dockerfile and .yml files have been created. To run the project, enter the following command in the root directory through bash or some other terminal -
 
 ```bash
 docker-compose up --build 
 ```
-The flask app runs on the local port 5000 (http://127.0.0.1:5000). Requests can be sent through '/users' routes. Example - 
+The flask app runs on the local port 5000 (http://127.0.0.1:5000). Requests can be sent through '/users' routes. Examples - 
 
 `POST http://127.0.0.1:5000/users`
 `JSON payload = {'name':'...','email':'...','password':'...'}`
